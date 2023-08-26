@@ -1,0 +1,27 @@
+public class Main {
+    public static void main(String[] args) {
+        Person Ben = new Person("Ben", 38, 183, 85, 5000);
+        Person Olga = new Person("Olga", 19, 163, 62, 800);
+        Person Stanislaw = new Person("Stanislav", 73, 179, 95, 2300);
+
+        System.out.println("Выводим информацию о челевеке: ");
+
+        Ben.getInfo();
+        Olga.getInfo();
+        Stanislaw.getInfo();
+
+        System.out.println("Выводим информацию о работе человека: ");
+
+        Ben.goToWork();
+        Olga.goToWork();
+        Stanislaw.goToWork();
+
+        System.out.println("Выводим информацию о количестве денег: ");
+
+        Ben.getMoney();
+        Olga.getMoney();
+        Stanislaw.getMoney();
+
+    }
+
+}
