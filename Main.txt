@@ -1,0 +1,51 @@
+public class Main {
+    public static void main(String[] args) {
+        Person Ben = new Person("Ben", 38, 183, 85, 5000);
+        Person Olga = new Person("Olga", 19, 163, 62, 800);
+        Person Stanislaw = new Person("Stanislav", 73, 179, 95, 2300);
+
+        System.out.println("Выводим информацию о челевеке: ");
+
+        Ben.getInfo();
+        Olga.getInfo();
+        Stanislaw.getInfo();
+
+        System.out.println("Выводим информацию о работе человека: ");
+
+        Ben.goToWork();
+        Olga.goToWork();
+        Stanislaw.goToWork();
+
+        System.out.println("Выводим информацию о количестве денег: ");
+
+        Ben.getMoney();
+        Olga.getMoney();
+        Stanislaw.getMoney();
+
+        PensionFund First = new PensionFund("State Pension Fund", true, "01.05.1963", 190000);
+        PensionFund Second = new PensionFund("Star", false, "25.12.2002", 2300);
+        PensionFund Third = new PensionFund("Guarantee", false, "12.10.2020", 1358);
+
+        First.setName("State Pension Fund");
+        Second.setName("Star");
+        Third.setName("Guarantee");
+
+        First.setisGovernmentAgency(true);
+        Second.setisGovernmentAgency(false);
+        Third.setisGovernmentAgency(false);
+
+
+        First.getCreationData();
+        Second.getCreationData();
+        Third.getCreationData();
+
+        First.setNumberOfPeople(190000);
+        Second.setNumberOfPeople(2300);
+        Third.setNumberOfPeople(1358);
+
+        First.getInfo();
+        Second.getInfo();
+        Third.getInfo();
+    }
+
+}
