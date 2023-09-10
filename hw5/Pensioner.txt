@@ -1,0 +1,32 @@
+public class Pensioner extends Person {
+
+    private double pension;
+
+    public Pensioner(String name, int age, int height, int weight, double money, double pension) {
+        super(name, age, height, weight, money);
+        this.pension = pension;
+    }
+    public double getPension() {
+        return pension;
+    }
+
+    public void setPension(double pension) {
+        this.pension = pension;
+    }
+
+/*    @Override
+    public void die() {
+        System.out.println("Этот пенсионер умер,он заработал " + (getAge()-50)*getPension());
+        super.die();
+    }*/
+
+    @Override
+    public void die(int years) {
+        System.out.println(getName() + " - этот пенсионер умрет через " + years + " лет");
+    }
+
+    @Override
+    public void die() {
+
+    }
+}
